@@ -1,0 +1,262 @@
+@import url(app.css);
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: url("../assets/bgIMG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 2rem 0;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.header__name {
+  gap: 1rem;
+  background-color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header__name--left {
+  font-size: 2.5rem;
+}
+
+.header__name--right {
+  display: flex;
+  flex-direction: column;
+  width: 146px;
+}
+
+.header__name--right > span {
+  font-size: 0.8rem;
+  color: var(--gray-color);
+}
+
+.header__name--right {
+  font-size: 1.5rem;
+}
+
+.Typewriter__cursor {
+  font-weight: 100;
+}
+
+.header__work {
+  background-color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  width: max-content;
+}
+
+.header__work p {
+  color: var(--gray-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__pic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  flex: 0.5;
+}
+
+.header__profile {
+  width: 450px;
+  height: 100%;
+  z-index: 2;
+  filter: grayscale(1);
+}
+
+.header__overlay-circle {
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  z-index: 0;
+}
+
+.header__circles {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.header__image--circle {
+  width: 100px;
+  height: 100px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header__image--circle img {
+  width: 60%;
+}
+
+.header__image--circle:nth-child(1) {
+  width: 100px;
+  height: 100px;
+}
+
+.header__image--circle:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  margin-left: 1.75rem;
+}
+
+.header__image--circle:nth-child(3) {
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (max-width: 1170px) {
+  .header__profile {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .header__profile {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header__profile {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #home .wrapper {
+    padding: 4rem 0 0;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0 0;
+  }
+
+  .header__info {
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .header__work p {
+    justify-content: center;
+  }
+
+  .header__pic {
+    width: 100%;
+  }
+
+  .header__profile {
+    width: 350px;
+  }
+
+  .header__overlay-circle {
+    width: 100%;
+    top: -4%;
+    left: 10%;
+  }
+
+  .header__circles {
+    flex-direction: row;
+    z-index: 2;
+    margin: 3rem;
+  }
+
+  .header__image--circle img {
+    width: 50%;
+  }
+
+  .header__image--circle:nth-child(1) {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header__image--circle:nth-child(2) {
+    width: 130px;
+    height: 130px;
+    margin-left: 0;
+  }
+
+  .header__image--circle:nth-child(3) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header__profile {
+    width: 250px;
+  }
+
+  .header__circles {
+    flex-direction: row;
+    margin: 3rem;
+    gap: 1rem;
+  }
+
+  .header__image--circle:nth-child(1) {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header__image--circle:nth-child(2) {
+    width: 90px;
+    height: 90px;
+  }
+
+  .header__image--circle:nth-child(3) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header__profile {
+    width: 150px;
+  }
+
+  .header__overlay-circle {
+    top: -4%;
+    left: 7%;
+  }
+
+  .header__circles {
+    flex-direction: row;
+    margin: 3rem;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #home .social__links {
+    padding: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #home .navigation__dots {
+    padding: 0;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+}

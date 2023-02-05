@@ -1,0 +1,8 @@
+@import url(app.css);
+
+footer {
+  text-align: center;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  padding: 0.3rem;
+}

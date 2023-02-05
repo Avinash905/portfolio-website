@@ -1,0 +1,49 @@
+@import url(app.css);
+
+.social__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 1rem;
+  align-items: center;
+}
+
+.social__links div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid var(--gray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__links a {
+  color: var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twitter__link:hover {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+}
+
+.linkedin__link:hover {
+  background-color: #00acee;
+  border: 1px solid #00acee;
+}
+
+.instagram__link:hover {
+  background-color: #d62976;
+  border: 1px solid #d62976;
+}
+
+.twitter__link:hover a,
+.linkedin__link:hover a,
+.instagram__link:hover a {
+  color: var(--white-color) !important;
+}

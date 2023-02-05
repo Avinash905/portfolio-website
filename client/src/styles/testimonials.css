@@ -1,0 +1,133 @@
+@import url(app.css);
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.testimonial__card {
+  margin: 0 auto;
+  width: 60%;
+  height: 296px;
+  display: flex;
+  gap: 2rem;
+  background-color: var(--white-color);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 3rem;
+}
+
+.testimonial__image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__image img {
+  width: 100%;
+}
+
+.testimonials__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+.testimonials__info h4 {
+  color: var(--secondary-color);
+}
+
+.testimonials__info span {
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
+
+.testimonials__toggle {
+  gap: 2rem;
+}
+
+.testimonials__left,
+.testimonials__right {
+  padding: 1rem;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials__left svg,
+.testimonials__right svg {
+  color: var(--secondary-color);
+}
+
+.testimonials__left:hover,
+.testimonials__right:hover {
+  background-color: var(--secondary-color);
+}
+
+.testimonials__left:hover svg,
+.testimonials__right:hover svg {
+  color: var(--white-color);
+}
+
+.testimonials__brands {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonials__brands img {
+  filter: grayscale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.testimonials__brands img:hover {
+  filter: grayscale(0);
+}
+
+.testimonials__brands img {
+  width: 10%;
+}
+
+@media screen and (max-width: 1120px) {
+  .testimonial__card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .testimonial__card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonial__card {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .testimonial__image {
+    margin: 0 auto;
+    width: 20%;
+  }
+
+  .testimonials__content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials__brands img {
+    width: 20%;
+  }
+}

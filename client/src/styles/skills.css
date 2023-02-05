@@ -1,0 +1,114 @@
+@import url(app.css);
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills__container {
+  gap: 4rem;
+}
+
+.skills__heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.skills__images {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skills__item--image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.skills__item--image img {
+  width: 100%;
+}
+
+.skills__item span {
+  font-size: 0.8rem;
+  color: var(--gray-color);
+  font-weight: 600;
+}
+
+.experiences {
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience__item {
+  display: flex;
+  gap: 2rem;
+}
+
+.experience__year {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.work__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.work__item span {
+  font-size: 0.85rem;
+  color: var(--gray-color);
+}
+
+@media screen and (max-width: 996px) {
+  .skills__container {
+    gap: 2rem;
+  }
+  .experiences {
+    flex: 0.8;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .skills__container {
+    gap: 1rem;
+  }
+  .experiences {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills__container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .skills__images {
+    align-items: center;
+    justify-content: center;
+  }
+}

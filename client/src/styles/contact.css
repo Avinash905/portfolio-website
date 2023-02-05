@@ -1,0 +1,108 @@
+@import url(app.css);
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact__heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact__links {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact__email,
+.contact__phone {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 0 10px 0 var(--primary-color);
+}
+
+.contact__email {
+  background-color: rgba(255, 192, 203, 0.22);
+}
+
+.contact__phone {
+  background-color: var(--primary-color);
+}
+
+.contact__email img,
+.contact__phone img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact__email a,
+.contact__phone a {
+  color: var(--gray-color);
+  width: 100%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact__form > div {
+  width: 100%;
+  box-shadow: 0 0 10px 0 var(--primary-color);
+  border-radius: 5px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  border: none;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  font-family: var(--font-family);
+  border-radius: 5px;
+  color: var(--secondary-color);
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+}
+
+.form__btn {
+  border: none;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  font-size: 0.9rem;
+  padding: 1rem 1.5rem;
+  width: 35%;
+  font-family: var(--font-family);
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 830px) {
+  .contact__links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* @media screen and (max-width: 594px) {
+  
+} */

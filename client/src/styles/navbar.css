@@ -1,0 +1,113 @@
+@import url(app.css);
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  padding: 1rem 2rem;
+  z-index: 5;
+  position: fixed;
+  height: max-content;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar__logo img {
+  width: 150px;
+}
+
+.navbar-links {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links__link {
+  color: var(--gray-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.navbar-links__link:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.navbar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+  }
+
+  .navbar-menu--open {
+    color: white;
+  }
+
+  .navbar-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    padding: 1rem;
+    z-index: 10;
+    top: 0%;
+    right: 0%;
+    background: url("../assets/bgWhite.png");
+    background-color: var(--white-color);
+    background-repeat: repeat;
+    background-size: cover;
+    box-shadow: 0 0 5px 0 rgba(31, 38, 135, 0.37);
+  }
+
+  .navbar-menu--close {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 4%;
+    right: 7%;
+    font-size: 2rem;
+  }
+
+  .navbar-menu__links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .navbar-menu__link {
+    text-transform: uppercase;
+    color: var(--gray-color);
+    font-weight: 500;
+  }
+}

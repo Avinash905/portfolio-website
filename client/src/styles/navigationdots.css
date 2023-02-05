@@ -1,0 +1,22 @@
+@import url(app.css);
+
+.navigation__dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.navigation__dot {
+  background-color: #cbcbcb;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation__dot:hover {
+  background-color: var(--secondary-color);
+}

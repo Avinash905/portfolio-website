@@ -1,0 +1,46 @@
+@import url(app.css);
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.about__heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about__heading span {
+  color: var(--secondary-color);
+}
+
+.about__items {
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: space-evenly;
+}
+
+.about__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 200px;
+}
+
+.about__card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about__card h4 {
+  font-size: 1rem;
+}
+
+.about__card p {
+  font-size: 0.8rem;
+  color: var(--gray-color);
+}

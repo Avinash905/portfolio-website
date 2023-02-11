@@ -38,8 +38,23 @@
 }
 
 .instagram__link:hover {
-  background-color: #d62976;
-  border: 1px solid #d62976;
+  background: linear-gradient(
+    180deg,
+    rgba(64, 93, 230, 1) 0%,
+    rgba(131, 58, 180, 1) 25%,
+    rgba(225, 48, 108, 1) 50%,
+    rgba(245, 96, 64, 1) 75%,
+    rgba(252, 175, 69, 1) 100%
+  );
+  border: 1px solid
+    linear-gradient(
+      180deg,
+      rgba(64, 93, 230, 1) 0%,
+      rgba(131, 58, 180, 1) 25%,
+      rgba(225, 48, 108, 1) 50%,
+      rgba(245, 96, 64, 1) 75%,
+      rgba(252, 175, 69, 1) 100%
+    );
 }
 
 .twitter__link:hover a,

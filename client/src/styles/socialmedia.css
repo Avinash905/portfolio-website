@@ -28,13 +28,13 @@
 }
 
 .twitter__link:hover {
-  background-color: #3b5998;
-  border: 1px solid #3b5998;
+  background-color: #00acee;
+  border: 1px solid #00acee;
 }
 
 .linkedin__link:hover {
-  background-color: #00acee;
-  border: 1px solid #00acee;
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
 }
 
 .instagram__link:hover {

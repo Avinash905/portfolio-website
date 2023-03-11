@@ -22,7 +22,10 @@ const Header = () => {
   };
 
   return (
-    <section className="header container" id="home">
+    <section
+      className="header container"
+      id="home"
+    >
       <motion.div
         className="header__info"
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
@@ -54,7 +57,11 @@ const Header = () => {
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.6, delayChildren: 0.75 }}
       >
-        <img src={me} alt="profile" className="header__profile" />
+        <img
+          src={me}
+          alt="profile"
+          className="header__profile"
+        />
         <motion.img
           src={circle}
           alt="circle"
@@ -70,8 +77,14 @@ const Header = () => {
       >
         {[node, react, python].map((ele) => {
           return (
-            <div className="header__image--circle flex-center" key={ele}>
-              <img src={ele} alt={`${ele}`} />
+            <div
+              className="header__image--circle flex-center"
+              key={ele}
+            >
+              <img
+                src={ele}
+                alt={`${ele}`}
+              />
             </div>
           );
         })}

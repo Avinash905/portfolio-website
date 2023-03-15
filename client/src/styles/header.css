@@ -74,7 +74,6 @@
 }
 
 .header__profile {
-  width: 450px;
   height: 100%;
   z-index: 2;
   filter: grayscale(1);
@@ -83,8 +82,8 @@
 .header__overlay-circle {
   width: 100%;
   position: absolute;
-  top: 10%;
-  left: 0%;
+  top: -9%;
+  left: -8%;
   z-index: 0;
 }
 

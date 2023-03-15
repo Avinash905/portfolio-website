@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/header.css";
 import { motion } from "framer-motion";
-import me from "../assets/me-nobg.png";
+import me from "../assets/me-pic.png";
 import circle from "../assets/circle.svg";
 import react from "../assets/react.png";
 import node from "../assets/node.png";

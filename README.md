@@ -3,7 +3,7 @@
 <h3>Description :</h3> 
 This is my personal portfolio website.
 
-👉[Click here](https://dunna-avinash.netlify.app/) to check out the app.
+👉[Click here](https://dunna-avinash.netlify.app/) to check out the website.
 <br/>
 
 <hr/>
